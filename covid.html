@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            COVID Countdown
+        </title>
+
+        <style>
+            body {
+                font-family: Arial;
+                background-color: #2C2F33;
+                color: #c2c2c2;
+            }
+            
+            p {
+                font-size: 3vw;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 4vw;
+                margin: 0;
+            }
+
+            .wd-75 {
+                width: 75%;
+                background: #23272A;
+                border-radius: 5px;
+                margin: 10px;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            h5 {
+                margin: 0;
+                font-size: 1vw;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <div class="wd-75">
+                <h1>Schools Reopen & Meet 1 other:</h1>
+                <p id="c1"></p>
+            </div>
+
+            <div class="wd-75">
+                <h1>Rule of 6 outside:</h1>
+                <p id="c2"></p>
+            </div>
+
+            <div class="wd-75">
+                <h1>Pubs, Resturants, non-essential shops</h1>
+                <p id="c3"></p>
+            </div>
+
+            <div class="wd-75">
+                <h1>Indoor venues & Meeting indoors</h1>
+                <p id="c4"></p>
+                <h5>*Pubs & Resturants is indoors</h5>
+            </div>
+
+            <div class="wd-75">
+                <h1>All Social/Legal restrictions removed</h1>
+                <p id="c5"></p>
+            </div> 
+        </center>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Mar 8, 2021 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("c1").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("c1").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate2 = new Date("Mar 29, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now2 = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance2 = countDownDate2 - now2;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+      var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("c2").innerHTML = days2 + "d " + hours2 + "h "
+      + minutes2 + "m " + seconds2 + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("c2").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate3 = new Date("Apr 12, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now3 = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance3 = countDownDate3 - now3;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+      var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("c3").innerHTML = days3 + "d " + hours3 + "h "
+      + minutes3 + "m " + seconds3 + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("c3").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate4 = new Date("May 17, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now4 = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance4 = countDownDate4 - now4;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+      var hours4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds4 = Math.floor((distance4 % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("c4").innerHTML = days4 + "d " + hours4 + "h "
+      + minutes4 + "m " + seconds4 + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("c4").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate5 = new Date("Jun 21, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now5 = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance5 = countDownDate5 - now5;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days5 = Math.floor(distance5 / (1000 * 60 * 60 * 25));
+      var hours5 = Math.floor((distance5 % (1000 * 60 * 60 * 25)) / (1000 * 60 * 60));
+      var minutes5 = Math.floor((distance5 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds5 = Math.floor((distance5 % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("c5").innerHTML = days5 + "d " + hours5 + "h "
+      + minutes5 + "m " + seconds5 + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("c5").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+    </body>
+
+</html>
